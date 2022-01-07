@@ -1,0 +1,40 @@
+.wrapper__json__file__header {
+    height: 50px;
+    position:absolute;
+    left: 40%;
+    top: 15%;
+    font-family: cursive;
+    width: 400px;
+}
+.wrapper__json__file {
+    height: 500px;
+    font-family: inherit;
+}
+.wrapper__json__file__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.wrapper__users__names {
+    position: relative;
+    left: -40px;
+    overflow-y: scroll;
+    height: 500px;
+    width: 400px;
+    background-color: white;
+}
+.wrapper__users__names_li {
+    display: flex;
+    border: 1px solid black;
+    margin-left: -40px;
+}
+.users__names {
+    list-style-type: none;
+    font-size: 1.5em;
+}
+.users__names__cross {
+    margin-left:auto;
+    cursor: pointer;
+}
