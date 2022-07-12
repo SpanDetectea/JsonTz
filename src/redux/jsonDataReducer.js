@@ -11,7 +11,9 @@ let initialState = {
 const jsonDataReducer = (state = initialState, action) => {
     switch (action.type) {
         case GET_DATA_JSON:
-            let usersNames = setUsersCount(action.data).sort();
+            let usersNames = setUsersCount(action.data).sort(function (a, b) {
+                return a.toLowerCase().localeCompare(b.toLowerCase());
+            });
             return {
                 ...state,
                 data: action.data,
